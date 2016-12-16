@@ -3,10 +3,11 @@ package main
 import "testing"
 
 func TestPolicy1(t *testing.T) {
-	m := make(map[string]int)
-	m["UUUDDUDU"] = 6
-	m["DDUUDD"] = 5
-	m["UDUDUDU"] = 6
+	m := map[string]int {
+		"UUUDDUDU": 6,
+		"DDUUDD": 5,
+		"UDUDUDU": 6,
+	}
 
 	for k, v := range m {
 		expected := v
@@ -18,10 +19,11 @@ func TestPolicy1(t *testing.T) {
 }
 
 func TestPolicy2(t *testing.T) {
-	m := make(map[string]int)
-	m["UUUDDUDU"] = 7
-	m["DDUUDD"] = 4
-	m["UDUDUDU"] = 7
+	m := map[string]int {
+		"UUUDDUDU": 7,
+		"DDUUDD": 4,
+		"UDUDUDU": 7,
+	}
 
 	for k, v := range m {
 		expected := v
@@ -33,10 +35,11 @@ func TestPolicy2(t *testing.T) {
 }
 
 func TestPolicy3(t *testing.T) {
-	m := make(map[string]int)
-	m["UUUDDUDU"] = 4
-	m["DDUUDD"] = 2
-	m["UDUDUDU"] = 6
+	m := map[string]int {
+		"UUUDDUDU": 4,
+		"DDUUDD": 2,
+		"UDUDUDU": 6,
+	}
 
 	for k, v := range m {
 		expected := v
